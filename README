@@ -1,0 +1,11 @@
+You will have to compile the DBSCAN.c file to get the executable. The DBSCAN.h header file contains all the parameters that you need to define i.e. no. of features, dataset size, epsilon and minimum points. For reduced computation time, I have taken epsilon to be the squared distance, and thus depending on your dataset you may have to change the datatype of 'distance' to long long int wherever I have used it locally. While running the code, mention the data filename as an argument. Also the format in which I have assumed the data to be in is as follows:
+
+point1(n features separated by spaces)
+point2(...)
+.
+.
+.
+.
+pointm(...)
+
+On running the code the output will be in a file called "prediction.txt". There will be dataset_size no. of values in the file. A value of 0 says that the corresponding point in your dataset does not belong to a cluster, whereas any positive value mentions the cluster no. to which it belongs. I have attached an example input file called "data.txt" and also the corresponding output.
